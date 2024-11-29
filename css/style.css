@@ -1,0 +1,146 @@
+/*Restart */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/*Estilos del header */
+
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #690201;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+header h1{
+    
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    color: antiquewhite;
+
+}
+
+/*Estilos del main */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos de Footer */
+
+footer{
+    padding: 10px;
+    background-color: #690201;
+    color: black;
+}
+
+/* Estilos de Armamentos */
+
+.armamento-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.armamento-grid .titulo {
+    grid-column: 1;
+    font-size: 2rem;
+    margin: 10px 0;
+    color: gold;
+}
+
+.armamento-grid .item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-right: 25px;
+    gap: 15px;
+    align-items: start;
+}
+
+.armamento-grid .item h3 {
+    grid-column: 1 / -1; /* Hace que el título abarque las dos columnas */
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.armamento-grid .item img {
+    max-width: 70%;
+    align-self: center;
+    justify-self: center;
+}
+
+.armamento-grid .item p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Estilos de Equipamiento */
+
+h1.titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Lista estilizada */
+.equipamiento-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.equipamiento-lista li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.equipamiento-lista img {
+    width: 80px; /* Tamaño reducido para la representación */
+    height: 80px;
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 2px solid #ccc;
+}
+
+.equipamiento-lista h3 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.equipamiento-lista p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
