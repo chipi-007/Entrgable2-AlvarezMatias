@@ -41,7 +41,6 @@ main{
 
 main div img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -61,29 +60,64 @@ footer{
     color: black;
 }
 
+/* Estilos de main index */
+.contenido {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+    align-items: center; 
+}
+
+.item img {
+    width: 150px;
+    height: auto;
+}
+
+.texto {
+    flex: 1;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contenido-principal .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen {
+        text-align: center;
+    }
+}
+
 /* Estilos de Armamentos */
 
 .armamento-grid {
     display: grid;
     gap: 20px;
-    grid-template-rows: auto 1fr; /* Dos filas: una para el título, otra para las cards */
-    grid-template-columns: 1fr; /* Solo una columna */
+    grid-template-rows: auto 1fr; 
+    grid-template-columns: 1fr; 
     padding: 0 20px;
 }
 
 .titulo {
-    grid-row: 1; /* Título en la primera fila */
-    text-align: center; /* Centrar el título */
+    grid-row: 1;
+    text-align: center; 
     font-size: 2rem;
     color: #f3d83c;
     margin-bottom: 20px;
 }
 
 .card-container {
-    grid-row: 2; /* Las cards en la segunda fila */
+    grid-row: 2; 
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Las cards se distribuirán en varias columnas */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .card, .card-magia {
@@ -117,7 +151,7 @@ footer{
 /* Media Query para pantallas mayores de 600px (Tablet) */
 @media (min-width: 600px) {
     .armamento-grid {
-        grid-template-columns: 1fr; /* Para mantener la única columna general */
+        grid-template-columns: 1fr; 
     }
 
     .card-container {
@@ -144,10 +178,10 @@ footer{
 }
 
 .equipamiento-lista img {
-    width: 80px; /* Tamaño reducido para la representación */
+    width: 80px; 
     height: 80px;
-    object-fit: cover; /* Asegura que la imagen mantenga proporciones */
-    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; 
+    border-radius: 50%; 
     border: 2px solid #ccc;
 }
 
