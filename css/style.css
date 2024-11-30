@@ -63,7 +63,7 @@ footer{
 /* Estilos de main index */
 .contenido {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 10px;
 }
 
